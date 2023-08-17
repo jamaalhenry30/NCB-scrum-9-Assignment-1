@@ -1,5 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonButton} from '@ionic/react';
+import React from 'react';
+import { Link } from 'react-router-dom'; // If you're using React Router
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -7,7 +8,20 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Scrum9 Assignment 1 - Ionic</IonTitle>
+          <IonButtons slot="end">
+          <Link to="/About">
+            <IonButton>
+              About
+            </IonButton>
+          </Link>
+          <Link to="/Products">
+            <IonButton>
+              Products
+            </IonButton>
+          </Link>
+        </IonButtons>
+
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,8 +30,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
-      </IonContent>
+      Home </IonContent>
     </IonPage>
   );
 };

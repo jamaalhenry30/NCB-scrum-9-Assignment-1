@@ -1,0 +1,52 @@
+/* src/About.css */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 5vw; /* Responsive margin top */
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .centered-image {
+    margin-top: 5vw; /* Responsive margin top */
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw; /* Responsive max width */
+    height: auto;
+    max-height: 40vh; /* Responsive max height */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .name {
+    margin-top: 2vw; /* Responsive margin top */
+    font-size: 5vw; /* Responsive font size */
+    font-weight: bold;
+  }
+  
+  .team {
+    margin-top: 1vw; /* Responsive margin top */
+    font-size: 3vw; /* Responsive font size */
+    color: #777;
+  }
+  
+  .summary {
+    margin-top: 5vh; /* Responsive margin top */
+    max-width: 80vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw; /* Responsive font size */
+    line-height: 1.5;
+    text-align: justify;
+    /* Add the following styles to center the summary */
+    margin: 5vh auto; /* Responsive margins */
+    text-align: center;
+  }
+  
+  /* Add responsive adjustments as needed */
+  
